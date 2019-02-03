@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Initialise the project
+##
+## Usage: fin init
+
+fin composer install --optimize-autoloader --prefer-source
