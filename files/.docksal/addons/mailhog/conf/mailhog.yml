@@ -1,5 +1,3 @@
-version: "2.1"
-services:
   mail:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
