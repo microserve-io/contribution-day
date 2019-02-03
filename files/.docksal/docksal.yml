@@ -1,6 +1,10 @@
 version: "2.1"
-version: "2.1"
 services:
+  cli:
+    environment:
+      - MYSQL_DATABASE
+      - MYSQL_PASSWORD
+      - MYSQL_USER
   mail:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
