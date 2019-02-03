@@ -4,4 +4,10 @@
 ##
 ## Usage: fin init
 
+fin start
+
 fin composer install --optimize-autoloader --prefer-source
+
+fin drush site-install -y --account-pass=admin
+
+fin uli
