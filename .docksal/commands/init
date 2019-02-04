@@ -6,6 +6,12 @@
 
 fin start
 
+git clone --branch 8.6.x https://git.drupal.org/project/drupal.git --depth 1 core
+
+cp -R sites core
+
+cd core
+
 # Generate a salt value.
 fin exec 'openssl rand -base64 32 > ~/salt.txt'
 
