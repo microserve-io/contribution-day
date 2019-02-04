@@ -6,6 +6,11 @@
 
 fin start
 
-fin drush site-install -y --account-pass=admin
+git clone --branch 7.x https://git.drupal.org/project/drupal.git --depth 1 core
 
+cp -R sites core
+
+cd core
+
+fin drush site-install -y --account-pass=admin
 fin uli
