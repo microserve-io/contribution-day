@@ -286,7 +286,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'VcU4F20H%&';
+$settings['hash_salt'] = file_get_contents('/home/docker/salt.txt');
 
 /**
  * Deployment identifier.

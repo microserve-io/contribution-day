@@ -6,6 +6,9 @@
 
 fin start
 
+# Generate a salt value.
+fin exec 'openssl rand -base64 32 > ~/salt.txt'
+
 fin composer install --optimize-autoloader --prefer-source
 
 fin drush site-install -y --account-pass=admin
