@@ -6,7 +6,7 @@
 
 fin start
 
-git clone --branch 7.x https://git.drupal.org/project/drupal.git --depth 1 drupal
+git clone --branch 7.x https://git.drupal.org/project/drupal.git drupal
 
 cp -R static-files/* drupal
 
