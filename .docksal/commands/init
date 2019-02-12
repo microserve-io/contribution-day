@@ -6,11 +6,11 @@
 
 fin start
 
-git clone --branch 8.6.x https://git.drupal.org/project/drupal.git core
+git clone --branch 8.6.x https://git.drupal.org/project/drupal.git drupal
 
-cp -R static-files/* core
+cp -R static-files/* drupal
 
-cd core
+cd drupal
 
 # Generate a salt value.
 fin exec 'openssl rand -base64 32 > ~/salt.txt'
