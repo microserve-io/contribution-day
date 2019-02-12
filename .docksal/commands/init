@@ -6,11 +6,11 @@
 
 fin start
 
-git clone --branch 7.x https://git.drupal.org/project/drupal.git --depth 1 core
+git clone --branch 7.x https://git.drupal.org/project/drupal.git --depth 1 drupal
 
-cp -R static-files/* core
+cp -R static-files/* drupal
 
-cd core
+cd drupal
 
 fin drush site-install -y --account-pass=admin
 fin uli
