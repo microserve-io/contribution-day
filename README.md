@@ -3,7 +3,7 @@
 ## Local setup
 
 ```
-git clone git@gitlab.microserve.io:microserve/contribution-day.git --branch 8.6.x drupal86
+git clone https://github.com/microserve-io/contribution-day.git --branch 8.6.x drupal86
 cd drupal86
 fin init
 ```
