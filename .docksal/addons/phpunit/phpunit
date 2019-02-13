@@ -18,8 +18,18 @@ DOCROOT_PATH="${PROJECT_ROOT}/${DOCROOT}"
 DRUPAL_CORE_PATH="${DOCROOT_PATH}/core"
 
 run_tests() {
-    ${PROJECT_ROOT}/vendor/bin/phpunit -c ${DRUPAL_CORE_PATH} "$@"
+    $PHPUNIT_PATH -c ${DRUPAL_CORE_PATH} "$@"
 }
+
+# Find the path to the phpunit executable.
+if [ -e ${PROJECT_ROOT}/vendor/bin/phpunit ]; then
+    PHPUNIT_PATH="${PROJECT_ROOT}/vendor/bin/phpunit"
+elif [ -e ${DOCROOT_PATH}/vendor/bin/phpunit ]; then
+    PHPUNIT_PATH="${DOCROOT_PATH}/vendor/bin/phpunit"
+else
+    echo 'Cannot find the phpunit executable.'
+    exit 1
+fi
 
 if [ ! -e ${DRUPAL_CORE_PATH}/phpunit.xml ]; then
     if [ -e "${PROJECT_ROOT}/.docksal/drupal/core/phpunit.xml" ]; then
