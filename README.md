@@ -2,7 +2,7 @@
 
 A Docksal based local environment for our Drupal contribution days at [Microserve](https://microserve.io).
 
-It includes commonly used Docksal addons, and automates common tasks like cloning Drupal core, generating hash salts, copying and changing settings files and setting up PHPUnit for running automated tests.
+It includes commonly used Docksal addons, and automates common tasks like cloning Drupal core, copying and changing settings files and setting up SimpleTest for running automated tests.
 This should simplify and speed up the setup process, allowing more time for people to focus on contribution tasks.
 
 ## Prerequisites
