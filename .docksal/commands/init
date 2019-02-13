@@ -13,4 +13,8 @@ cp -R static-files/* drupal
 cd drupal
 
 fin drush site-install -y --account-pass=admin
+fin drush pm-disable -y overlay
+fin drush pm-uninstall -y overlay
+fin drush pm-enable -y simpletest
+
 fin uli
