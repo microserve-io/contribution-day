@@ -1,6 +1,6 @@
 # Microserve Contribution Day
 
-A Docksal based local environment for our Drupal contribution days at [Microserve](https://microserve.io).
+A Docksal based local environment for our Drupal contribution days at [Microserve][microserve].
 
 It includes commonly used Docksal addons, and automates common tasks like cloning Drupal core, copying and changing settings files and setting up SimpleTest for running automated tests.
 This should simplify and speed up the setup process, allowing more time for people to focus on contribution tasks.
@@ -31,3 +31,10 @@ This should simplify and speed up the setup process, allowing more time for peop
 ## License
 
 MIT
+
+## Credits
+
+* [Oliver Davies](https://github.com/opdavies)
+* [All contributors](https://github.com/microserve-io/contribution-day/graphs/contributors)
+
+[microserve]: https://microserve.io
