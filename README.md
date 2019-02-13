@@ -12,7 +12,7 @@ This should simplify and speed up the setup process, allowing more time for peop
 
 ## Local setup
 
-1. Clone the repository into a local directory, specifying the directory name and the Drupal version.
+1. Clone the repository into your Docksal projects directory (e.g. `~/Projects`), specifying the directory name and the Drupal version.
 
     ```
     git clone https://github.com/microserve-io/contribution-day.git --branch 8.7.x drupal87
