@@ -12,6 +12,8 @@ cp -R static-files/* drupal
 
 cd drupal
 
+fin composer run-script drupal-phpunit-upgrade
+
 # Generate a salt value.
 fin exec 'openssl rand -base64 32 > ~/salt.txt'
 
