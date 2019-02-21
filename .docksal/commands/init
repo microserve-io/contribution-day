@@ -12,12 +12,13 @@ cp -R static-files/* drupal
 
 cd drupal
 
-fin composer run-script drupal-phpunit-upgrade
-
 # Generate a salt value.
 fin exec 'openssl rand -base64 32 > ~/salt.txt'
 
 fin composer install --optimize-autoloader --prefer-source
+
+# Update PHPUnit.
+fin composer run-script drupal-phpunit-upgrade
 
 fin drush site-install -y --account-pass=admin
 
